@@ -2525,3 +2525,116 @@ html { scroll-behavior: smooth; }
     font-size: 1.35rem;
   }
 }
+
+/* ===========================
+   Garden Center — "In Bloom Now" gallery
+   Portrait-friendly cards with captions. The grid auto-fits so we get
+   3-across on desktop, 2-across on tablet, 1-across on phone.
+   =========================== */
+.bloom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.1rem;
+}
+
+.bloom-card {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.bloom-card-img {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--parchment);
+  box-shadow: 0 1px 2px rgba(43, 31, 16, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bloom-card:hover .bloom-card-img {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(43, 31, 16, 0.12);
+}
+
+.bloom-card-caption {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fern);
+  text-align: center;
+}
+
+/* ===========================
+   Garden Center — Bulk Materials cards
+   These class names (offering-card*) are referenced in the page markup but
+   were never styled. Adding them here so the four cards (Black Mulch, Brown
+   Mulch, Screened Topsoil, Compost) render as proper cards with the same
+   visual language as the rest of the site.
+   =========================== */
+.offering-card {
+  background: var(--cream);
+  border: 1px solid rgba(122, 85, 53, 0.14);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.offering-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(43, 31, 16, 0.1);
+}
+
+.offering-card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--parchment);
+}
+
+.offering-card-body {
+  padding: 1.1rem 1.3rem 1.3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.offering-card-title {
+  font-family: var(--font-cormorant), "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--soil);
+  margin: 0 0 0.4rem;
+}
+
+.offering-card-desc {
+  font-size: 0.86rem;
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--bark);
+  margin: 0 0 1rem;
+  flex: 1;
+}
+
+.offering-card-link {
+  align-self: flex-start;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fern);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--fern);
+  padding-bottom: 2px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.offering-card-link:hover {
+  color: var(--soil);
+  border-color: var(--soil);
+}

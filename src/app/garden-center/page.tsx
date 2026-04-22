@@ -119,37 +119,42 @@ export default function GardenCenterPage() {
             baskets, geraniums, begonias and everything else to bring your beds
             to life.
           </p>
-          <div className="gg">
-            <div className="gi">
-              <Image
-                src="/images/hanging-baskets.jpg"
-                alt="Colorful hanging flower baskets — begonias, petunias and calibrachoa"
-                width={800}
-                height={600}
-                sizes="(max-width: 900px) 100vw, 33vw"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </div>
-            <div className="gi">
-              <Image
-                src="/images/geraniums.jpg"
-                alt="Rows of red, pink and magenta geraniums on display"
-                width={800}
-                height={600}
-                sizes="(max-width: 900px) 100vw, 33vw"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </div>
-            <div className="gi">
-              <Image
-                src="/images/begonias.jpg"
-                alt="Trays of begonia starter plants by the Country Gardens sign"
-                width={800}
-                height={600}
-                sizes="(max-width: 900px) 100vw, 33vw"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-              />
-            </div>
+          <div className="bloom-grid">
+            {[
+              {
+                src: "/images/hanging-baskets.jpg",
+                alt: "Colorful hanging flower baskets — begonias, petunias and calibrachoa",
+                caption: "Hanging Baskets",
+                objectPosition: "center 40%",
+              },
+              {
+                src: "/images/geraniums.jpg",
+                alt: "Rows of red, pink and magenta geraniums on display",
+                caption: "Geraniums",
+                objectPosition: "center",
+              },
+              {
+                src: "/images/begonias.jpg",
+                alt: "Trays of begonia starter plants at the garden center entrance",
+                caption: "Begonia Trays",
+                objectPosition: "center 70%",
+              },
+            ].map((item) => (
+              <figure key={item.src} className="bloom-card">
+                <div className="bloom-card-img">
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 33vw"
+                    style={{ objectFit: "cover", objectPosition: item.objectPosition }}
+                  />
+                </div>
+                <figcaption className="bloom-card-caption">
+                  {item.caption}
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
 
