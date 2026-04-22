@@ -11,12 +11,12 @@ export default function HomePage() {
       <section id="top" className="hero-wrap">
         <Image
           className="hero-bg"
-          src={toastImages.heroStorefront}
+          src="/images/hero.jpg"
           alt="Country Gardens Farm Market — Robbinsville, NJ"
           fill
           priority
           sizes="100vw"
-          style={{ objectFit: "cover", objectPosition: "center 30%" }}
+          style={{ objectFit: "contain", objectPosition: "right center" }}
         />
         <div className="hero-scrim" />
         <div className="hero-body">
@@ -120,8 +120,8 @@ export default function HomePage() {
             href="/farm-market"
             title="Farm Market"
             description="Jersey Fresh produce, local dairy, fresh breads and seasonal specialty goods."
-            image={toastImages.salads}
-            alt="Farm market salads"
+            image="/images/produce-peaches-corn.jpg"
+            alt="Jersey Fresh peaches and sweet corn"
           />
           <OfferingCard
             href="/deli"
@@ -134,8 +134,8 @@ export default function HomePage() {
             href="/bakery"
             title="Bakery"
             description="Deep-dish pies, donuts, muffins and cakes baked fresh on-site every day."
-            image={toastImages.bakery}
-            alt="Fresh bakery items"
+            image="/images/donuts.jpg"
+            alt="Fresh apple cider donuts dusted in sugar"
           />
           <OfferingCard
             href="/catering"

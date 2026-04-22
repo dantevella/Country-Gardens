@@ -108,6 +108,51 @@ export default function GardenCenterPage() {
           </TwoColWithImage>
         </div>
 
+        {/* IN BLOOM — seasonal photo strip showing real inventory */}
+        <div id="in-bloom" style={{ marginBottom: "2.5rem" }}>
+          <span className="kicker">In Bloom Now</span>
+          <h3 className="sh3" style={{ marginBottom: "0.4rem" }}>
+            Fresh Off the Tables
+          </h3>
+          <p className="slead" style={{ maxWidth: "60ch", marginBottom: "1.5rem" }}>
+            A look at what&rsquo;s on our benches this season &mdash; hanging
+            baskets, geraniums, begonias and everything else to bring your beds
+            to life.
+          </p>
+          <div className="gg">
+            <div className="gi">
+              <Image
+                src="/images/hanging-baskets.jpg"
+                alt="Colorful hanging flower baskets — begonias, petunias and calibrachoa"
+                width={800}
+                height={600}
+                sizes="(max-width: 900px) 100vw, 33vw"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </div>
+            <div className="gi">
+              <Image
+                src="/images/geraniums.jpg"
+                alt="Rows of red, pink and magenta geraniums on display"
+                width={800}
+                height={600}
+                sizes="(max-width: 900px) 100vw, 33vw"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </div>
+            <div className="gi">
+              <Image
+                src="/images/begonias.jpg"
+                alt="Trays of begonia starter plants by the Country Gardens sign"
+                width={800}
+                height={600}
+                sizes="(max-width: 900px) 100vw, 33vw"
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+              />
+            </div>
+          </div>
+        </div>
+
         {/* PREMIUM SOIL & MULCH — ported from the live Toast site */}
         <div id="bulk-materials" style={{ marginBottom: "2.5rem" }}>
           <span className="kicker">Premium Soil &amp; Mulch</span>

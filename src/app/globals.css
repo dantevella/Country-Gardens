@@ -42,6 +42,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  width: auto;
   display: block;
 }
 
@@ -575,6 +576,7 @@ html { scroll-behavior: smooth; }
   display: flex;
   align-items: center;
   overflow: hidden;
+  background: var(--soil);
 }
 
 .hero-bg {

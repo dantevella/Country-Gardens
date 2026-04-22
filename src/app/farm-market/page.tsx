@@ -17,8 +17,8 @@ export default function FarmMarketPage() {
         <TwoColWithImage
           imagePosition="right"
           image={{
-            src: "https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=900&q=80&fit=crop",
-            alt: "Fresh farm produce",
+            src: "/images/storefront-fall.jpg",
+            alt: "Country Gardens Farm Market entrance in autumn with pumpkins and mums",
           }}
         >
           <div>

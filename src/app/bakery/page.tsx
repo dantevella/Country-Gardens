@@ -18,8 +18,8 @@ export default function BakeryPage() {
         <TwoColWithImage
           imagePosition="left"
           image={{
-            src: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=900&q=80&fit=crop",
-            alt: "Fresh baked pies",
+            src: "/images/donuts.jpg",
+            alt: "Apple cider donuts dusted with sugar",
           }}
         >
           <div>

@@ -96,7 +96,7 @@ export function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span>
+        <span suppressHydrationWarning>
           © {new Date().getFullYear()} {business.name}. All Rights Reserved.
         </span>
         <span>Hand-crafted in Mercer County, NJ</span>
