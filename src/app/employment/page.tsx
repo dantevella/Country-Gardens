@@ -18,7 +18,7 @@ const openings = [
     id: "deli",
     title: "Deli Positions",
     schedule: "Full Time & Part Time",
-    tagline: "Hands-on, behind-the-counter roles in our Country Deli.",
+    tagline: "Hands-on, behind-the-counter roles in our Deli.",
     requirements: [
       "Experienced meat slicer",
       "Sandwich making",

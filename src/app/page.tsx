@@ -47,7 +47,7 @@ export default function HomePage() {
           </div>
           <div className="hero-trust">
             <div>
-              <div className="trust-num">33+</div>
+              <div className="trust-num">40+</div>
               <div className="trust-label">Years Serving NJ</div>
             </div>
             <div>
@@ -83,26 +83,6 @@ export default function HomePage() {
         ))}
       </section>
 
-      {/* WHAT'S FRESH */}
-      <section id="fresh" className="fresh-strip">
-        <div className="fresh-label">What&rsquo;s Fresh &amp; In Season Right Now</div>
-        <div className="fresh-cards">
-          {[
-            { name: "Deep-Dish Apple Pies", tag: "Daily" },
-            { name: "Apple Cider Donuts", tag: "Daily" },
-            { name: "Spring Bedding Plants", tag: "In Stock" },
-            { name: "Boar's Head Deli", tag: "Made to Order" },
-            { name: "Organic Coffee Bar", tag: "Open Daily" },
-            { name: "Spring Catering Menus", tag: "Available" },
-          ].map((c) => (
-            <div key={c.name} className="fresh-card">
-              {c.name}
-              <span className="fresh-tag">{c.tag}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* OFFERINGS */}
       <section id="offerings" className="section section-light">
         <span className="kicker">Everything You Need</span>
@@ -112,8 +92,7 @@ export default function HomePage() {
           made with a lot of heart.
         </h2>
         <p className="slead">
-          From fresh deli sandwiches to hand-picked garden plants — your
-          one-stop shop since {business.established}.
+          Your one-stop shop since {business.established}.
         </p>
         <div className="og">
           <OfferingCard
@@ -125,8 +104,8 @@ export default function HomePage() {
           />
           <OfferingCard
             href="/deli"
-            title="Country Deli"
-            description="Boar's Head made-to-order sandwiches, soups, salads & organic coffee."
+            title="Deli"
+            description="Homemade soups and salads."
             image={toastImages.sandwiches}
             alt="Deli sandwiches"
           />
@@ -141,22 +120,22 @@ export default function HomePage() {
             href="/catering"
             title="Catering & Events"
             description="Holiday dinners, cold platters, hot entrées and custom party packages."
-            image={toastImages.cateringCrostini}
-            alt="Catering appetizer spread"
+            image="/images/catering.jpg"
+            alt="Catering spread from Country Gardens"
           />
           <OfferingCard
             href="/fundraising"
             title="Fundraising"
             description="Pies, poinsettias, wreaths and more — easy seasonal programs for schools and nonprofits."
-            image={toastImages.fundraiserPieAd}
-            alt="Country Gardens pie fundraiser"
+            image="/images/family.jpg"
+            alt="Country Gardens family"
           />
           <OfferingCard
             href="/landscape"
             title="Landscaping & Hardscaping"
             description="Professional design, patios, stonework, installation and lawn maintenance."
-            image="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&fit=crop"
-            alt="Landscaping"
+            image="/images/landscape-walkway.jpg"
+            alt="Stamped paver walkway flanked by mulched beds and river rock"
           />
           <OfferingCard
             href="/garden-center"

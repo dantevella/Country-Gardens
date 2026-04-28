@@ -17,24 +17,15 @@ const cdn = (name: string) => `${CDN_BASE}/${name}`;
 
 /** Canonical image references keyed by page/section they appear on. */
 export const toastImages = {
-  logo: cdn("Logo.png"),
   heroStorefront: cdn("20251124_164205.jpg"),
-  salad: cdn("Image12519at300PM1.jpg"),
   gardenCenter: cdn("IMG_1142.JPG"),
-  catering1: cdn("IMG_4098.jpeg"),
-  catering2: cdn("IMG_5636.JPG"),
-  fundraiserPieAd: cdn("FundraiserPieAd.jpg"),
   bruceSpruce: cdn("BruceTheSpruce.png"),
   sandwich: cdn("Sandwich2.jpeg"),
   sandwiches: cdn("Sandwiches.jpg"),
-  salads: cdn("Salads.jpg"),
-  bakery: cdn("Bakery.jpg"),
   mulchBlack: cdn("blackmulch11.jpg"),
   mulchBrown: cdn("brownmulch.jpeg"),
   topsoil: cdn("screenedtopsoil.jpg"),
   compost: cdn("compost.jpg"),
-  cateringCrostini: cdn("CountryKitchenFlavor1.jpg"),
-  easterFlyer: cdn("EasterCGFlyer.png"),
 } as const;
 
 export type ToastImageKey = keyof typeof toastImages;

@@ -101,30 +101,11 @@ export const navGroups: NavGroup[] = [
           { label: "Request a Landscape Quote", href: "/inquire?type=landscape" },
         ],
       },
-      { label: "Gallery", href: "/gallery", icon: "GL" },
-      { label: "About Us", href: "/about", icon: "AB" },
-      {
-        label: "Visit Us",
-        href: "/visit",
-        icon: "VS",
-        anchors: [
-          { label: "Get Directions", href: MAPS_URL, external: true },
-        ],
-      },
     ],
   },
   {
     label: "More",
     items: [
-      {
-        label: "Mulch Delivery",
-        href: "/mulch",
-        icon: "ML",
-        anchors: [
-          { label: "Request a Delivery Quote", href: "/inquire?type=other" },
-        ],
-      },
-      { label: "Bruce the Spruce", href: "/bruce-the-spruce", icon: "BR" },
       {
         label: "Rooted: Classes + Workshops",
         href: "/rooted",
@@ -134,21 +115,22 @@ export const navGroups: NavGroup[] = [
         ],
       },
       {
-        label: "Gift Cards",
-        href: "/gift-cards",
-        icon: "GC",
-        anchors: [
-          { label: "Buy Online via Toast", href: TOAST_URL, external: true },
-        ],
-      },
-      { label: "Donation Request Form", href: "/donation-request", icon: "DN" },
-      {
         label: "Employment",
         href: "/employment",
         icon: "JB",
         anchors: [
           { label: "Current Openings", href: "/employment#openings" },
           { label: "Send Your Info", href: "/inquire?type=other" },
+        ],
+      },
+      { label: "Gallery", href: "/gallery", icon: "GL" },
+      { label: "About Us", href: "/about", icon: "AB" },
+      {
+        label: "Visit Us",
+        href: "/visit",
+        icon: "VS",
+        anchors: [
+          { label: "Get Directions", href: MAPS_URL, external: true },
         ],
       },
     ],
@@ -164,11 +146,7 @@ export const footerLinks: NavItem[] = [
   { label: "Fundraising", href: "/fundraising", icon: "FR" },
   { label: "Landscaping & Hardscaping", href: "/landscape", icon: "LS" },
   { label: "Garden Center", href: "/garden-center", icon: "GD" },
-  { label: "Mulch Delivery", href: "/mulch", icon: "ML" },
-  { label: "Bruce the Spruce", href: "/bruce-the-spruce", icon: "BR" },
   { label: "Classes + Workshops", href: "/rooted", icon: "CW" },
-  { label: "Gift Cards", href: "/gift-cards", icon: "GC" },
-  { label: "Donation Request", href: "/donation-request", icon: "DN" },
   { label: "Request a Quote", href: "/inquire", icon: "IN" },
   { label: "Now Hiring", href: "/employment", icon: "JB" },
 ];

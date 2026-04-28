@@ -130,9 +130,6 @@ html { scroll-behavior: smooth; }
   border-color: rgba(255, 255, 255, 0.14);
 }
 
-.hdr-toggle-mobile { display: none; }
-.hdr-toggle-desktop { display: inline-flex; }
-
 /* =========================================================
    HEADER MENU TOGGLE — single hamburger/back button.
    Swaps icon based on drawer state; visible at every breakpoint.
@@ -510,11 +507,6 @@ html { scroll-behavior: smooth; }
   pointer-events: auto;
 }
 
-/* Legacy aliases — older classes kept harmless if anything still references
-   them. The new components emit `.sidebar-overlay`. */
-.mob-toggle { display: none; }
-.mob-overlay { display: none; }
-
 /* Route-level fade animation */
 .page-fade {
   animation: fadeSlide 0.28s ease;
@@ -872,66 +864,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* =========================================================
-   WHAT'S FRESH STRIP
-   ========================================================= */
-
-.fresh-strip {
-  background: var(--parchment);
-  border-bottom: 1px solid rgba(122, 85, 53, 0.12);
-  padding: 1.5rem 3.5rem;
-}
-
-.fresh-label {
-  font-size: 0.63rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--sage);
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.fresh-label::before {
-  content: "";
-  width: 18px;
-  height: 1px;
-  background: var(--sage);
-}
-
-.fresh-cards {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.fresh-card {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--white);
-  border: 1px solid rgba(122, 85, 53, 0.14);
-  border-radius: 3px;
-  padding: 0.6rem 0.95rem;
-  font-size: 0.86rem;
-  font-weight: 500;
-  color: var(--soil);
-}
-
-.fresh-tag {
-  font-size: 0.56rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--fern);
-  background: var(--sky);
-  padding: 0.12rem 0.45rem;
-  border-radius: 10px;
-  margin-left: 0.25rem;
-}
-
-/* =========================================================
    OFFERING CARDS
    ========================================================= */
 
@@ -1053,16 +985,6 @@ html { scroll-behavior: smooth; }
   color: var(--bark);
   font-style: italic;
   margin-bottom: 1rem;
-}
-
-.rv-text::before {
-  content: "C";
-  font-family: var(--font-cormorant), "Cormorant Garamond", serif;
-  font-size: 2.5rem;
-  color: var(--fern);
-  line-height: 0;
-  vertical-align: -0.55rem;
-  margin-right: 0.15rem;
 }
 
 .rv-author {
@@ -1337,16 +1259,6 @@ html { scroll-behavior: smooth; }
   display: flex;
   gap: 0.85rem;
   align-items: flex-start;
-}
-
-.ci {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--straw);
-  flex-shrink: 0;
-  margin-top: 0.15rem;
-  min-width: 32px;
 }
 
 .cd {
@@ -2025,10 +1937,6 @@ html { scroll-behavior: smooth; }
     padding: 1.4rem 1.5rem;
   }
 
-  .fresh-strip {
-    padding: 1.4rem 1.5rem;
-  }
-
   .page-header {
     padding: 3rem 1.5rem 2rem;
   }
@@ -2130,15 +2038,6 @@ html { scroll-behavior: smooth; }
     gap: 1rem;
   }
 
-  .fresh-cards {
-    gap: 0.5rem;
-  }
-
-  .fresh-card {
-    font-size: 0.74rem;
-    padding: 0.5rem 0.8rem;
-  }
-
   .home-banner-cell {
     flex: 1 1 100%;
     border-right: none;
@@ -2151,12 +2050,6 @@ html { scroll-behavior: smooth; }
 }
 
 /* ─────────────── Helper utilities for content routes ─────────────── */
-.btn-row {
-  display: flex;
-  gap: 0.85rem;
-  flex-wrap: wrap;
-}
-
 .menu-link-cta {
   display: inline-block;
   margin-top: 1.8rem;

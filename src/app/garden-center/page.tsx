@@ -3,7 +3,6 @@ import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { TwoColWithImage } from "@/components/TwoColWithImage";
 import { GardenFeatureList } from "@/components/GardenFeature";
-import { toastImages } from "@/lib/images";
 
 export const metadata = { title: "Garden Center" };
 
@@ -32,8 +31,8 @@ export default function GardenCenterPage() {
           <TwoColWithImage
             imagePosition="left"
             image={{
-              src: toastImages.gardenCenter,
-              alt: "Country Gardens Garden Center in Robbinsville, NJ",
+              src: "/images/garden-center-phlox.jpg",
+              alt: "Tiered display of pink, magenta and purple creeping phlox in bloom at Country Gardens",
               aspect: "16/9",
             }}
           >

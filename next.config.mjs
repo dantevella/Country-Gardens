@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  // Strict mode double-invokes effects/renders in dev to surface bugs.
+  // Disabled here to roughly halve dev render time. Re-enable temporarily
+  // if you suspect a useEffect cleanup or stale-closure bug.
+  reactStrictMode: false,
   images: {
     // Allowlist for next/image. Unsplash covers the design-system stock shots;
     // the two cloudfront origins are the Toast platform's image CDNs — the

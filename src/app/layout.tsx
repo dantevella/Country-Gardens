@@ -7,9 +7,12 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
 
+// Weights trimmed to what's actually referenced in globals.css. Headings use
+// 600/700; the only italic is `.hero-h1 em` which inherits 600. Dropping the
+// 400 weight saves two font fetches on first compile.
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["600", "700"],
   style: ["normal", "italic"],
   variable: "--font-cormorant",
   display: "swap",

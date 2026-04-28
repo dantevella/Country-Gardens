@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { business } from "@/lib/nav";
 import { toastImages } from "@/lib/images";
 
-export const metadata = { title: "Country Deli — Boar's Head Made to Order" };
+export const metadata = { title: "Deli — Boar's Head Made to Order" };
 
 /**
  * Deli page.
@@ -17,7 +17,7 @@ export default function DeliPage() {
     <>
       <PageHeader
         kicker="Made to Order"
-        title="Country Deli"
+        title="Deli"
         description="Fresh, local & delicious — every day."
         bgWord="DELI"
       />
@@ -26,7 +26,7 @@ export default function DeliPage() {
         <div className="two-col" style={{ marginBottom: "2rem" }}>
           <Image
             src={toastImages.sandwich}
-            alt="Boar's Head sandwich from the Country Deli"
+            alt="Boar's Head sandwich from the Deli"
             width={900}
             height={675}
             sizes="(max-width: 900px) 100vw, 50vw"
@@ -41,10 +41,10 @@ export default function DeliPage() {
           />
           <div style={{ display: "flex", flexDirection: "column", gap: "1.2rem" }}>
             <div>
-              <span className="kicker">The Country Deli</span>
+              <span className="kicker">The Deli</span>
               <h3 className="sh3">Fresh, Local &amp; Delicious &mdash; Every Day!</h3>
               <p className="slead" style={{ maxWidth: "100%" }}>
-                Stop by our Country Deli for made-to-order sandwiches featuring
+                Stop by our Deli for made-to-order sandwiches featuring
                 Boar&rsquo;s Head, premium lunch meats, and hearty house-made
                 soups. Pair your meal with fresh-baked muffins, donuts, loaf
                 cakes, and more &mdash; all perfect with a cup from our coffee

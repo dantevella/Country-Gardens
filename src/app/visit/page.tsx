@@ -17,7 +17,6 @@ export default function VisitPage() {
           <div>
             <ul className="cl">
               <li>
-                <span className="ci">ADDR</span>
                 <div className="cd">
                   <strong>Address</strong>
                   {business.address}
@@ -26,7 +25,6 @@ export default function VisitPage() {
                 </div>
               </li>
               <li>
-                <span className="ci">CALL</span>
                 <div className="cd">
                   <strong>Phone</strong>
                   <a href={business.phoneHref} style={{ color: "inherit" }}>
@@ -35,7 +33,6 @@ export default function VisitPage() {
                 </div>
               </li>
               <li>
-                <span className="ci">HRS</span>
                 <div className="cd">
                   <strong>Hours</strong>
                   {business.hoursLines[0]}
@@ -48,7 +45,6 @@ export default function VisitPage() {
                 </div>
               </li>
               <li>
-                <span className="ci">WEB</span>
                 <div className="cd">
                   <strong>Website</strong>
                   <a

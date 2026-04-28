@@ -26,8 +26,8 @@ export default function AboutPage() {
         <TwoColWithImage
           imagePosition="right"
           image={{
-            src: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=900&q=80&fit=crop",
-            alt: "Community market",
+            src: "/images/family.jpg",
+            alt: "The Country Gardens family",
           }}
         >
           <div>
