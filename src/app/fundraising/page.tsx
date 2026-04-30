@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
-import { TwoColWithImage } from "@/components/TwoColWithImage";
 import { GardenFeatureList } from "@/components/GardenFeature";
 import { business } from "@/lib/nav";
 
@@ -17,21 +16,15 @@ export default function FundraisingPage() {
       />
       <section className="section section-light">
         <div id="how-it-works" style={{ marginBottom: "2.5rem" }}>
-          <TwoColWithImage
-            imagePosition="right"
-            image={{
-              src: "https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=900&q=80&fit=crop",
-              alt: "Country Gardens",
-            }}
-          >
+          <div>
             <div>
               <span className="kicker">How It Works</span>
               <h3 className="sh3">Simple, Seasonal &amp; Profitable</h3>
               <p className="slead" style={{ maxWidth: "100%", marginBottom: "1.5rem" }}>
-                Country Gardens has been supporting local schools and nonprofits
-                since {business.established}. Our programs are designed to be
-                easy to run, well-received by the community, and genuinely
-                profitable for your organization.
+                Country Gardens has been supporting local schools and
+                nonprofits. Our programs are designed to be easy to run,
+                well-received by the community, and genuinely profitable for
+                your organization.
               </p>
               <GardenFeatureList
                 features={[
@@ -65,7 +58,7 @@ export default function FundraisingPage() {
                 ]}
               />
             </div>
-          </TwoColWithImage>
+          </div>
         </div>
         <div id="partner" className="info-card">
           <h3>Interested in a Fundraising Partnership?</h3>

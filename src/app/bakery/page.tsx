@@ -48,13 +48,6 @@ export default function BakeryPage() {
                   description:
                     "Rotating flavors daily — blueberry, banana, pumpkin, and seasonal specialties.",
                 },
-                {
-                  code: "CKE",
-                  id: "cakes",
-                  title: "Specialty & Custom Cakes",
-                  description:
-                    "Layer cakes and custom orders available for birthdays, events and holidays. Call to order.",
-                },
               ]}
             />
             <div style={{ marginTop: "1.8rem" }}>

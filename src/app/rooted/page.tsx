@@ -30,8 +30,8 @@ export default function RootedPage() {
         <TwoColWithImage
           imagePosition="right"
           image={{
-            src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=900&q=80&fit=crop",
-            alt: "Garden workshop",
+            src: "/images/workshops.jpg",
+            alt: "Country Gardens workshop",
           }}
         >
           <div>

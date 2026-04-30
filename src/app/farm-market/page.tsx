@@ -9,7 +9,7 @@ export default function FarmMarketPage() {
     <>
       <PageHeader
         kicker="Jersey Fresh"
-        title="Market + Deli"
+        title="Farm Market"
         description="Locally sourced produce, dairy, breads, and specialty goods — fresh every day from nearby farms."
         bgWord="MARKET"
       />

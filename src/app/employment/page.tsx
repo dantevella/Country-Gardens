@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
-import { TwoColWithImage } from "@/components/TwoColWithImage";
-import { toastImages } from "@/lib/images";
 
 export const metadata = {
   title: "Employment — Country Gardens",
@@ -54,31 +52,22 @@ export default function EmploymentPage() {
 
       {/* INTRO */}
       <section className="section section-light">
-        <TwoColWithImage
-          imagePosition="right"
-          image={{
-            src: toastImages.heroStorefront,
-            alt: "Country Gardens Farm Market & Deli storefront, Robbinsville NJ",
-            aspect: "4/3",
-          }}
-        >
-          <div>
-            <span className="kicker">Why Country Gardens</span>
-            <h3 className="sh3">Real work, real food, real community.</h3>
-            <p className="slead" style={{ maxWidth: "100%", marginBottom: "1rem" }}>
-              We&rsquo;re a small, family-run operation &mdash; the same family
-              that&rsquo;s been running it since 1986. That means you work
-              alongside the owners, decisions move quickly, and good work gets
-              noticed.
-            </p>
-            <p className="slead" style={{ maxWidth: "100%" }}>
-              Whether you&rsquo;re slicing a fresh hoagie at the deli counter or
-              keeping the market floor stocked for a Saturday-morning rush,
-              you&rsquo;re part of a team that cares about doing things the right
-              way. Full and part-time positions are available below.
-            </p>
-          </div>
-        </TwoColWithImage>
+        <div>
+          <span className="kicker">Why Country Gardens</span>
+          <h3 className="sh3">Real work, real food, real community.</h3>
+          <p className="slead" style={{ maxWidth: "100%", marginBottom: "1rem" }}>
+            We&rsquo;re a small, family-run operation &mdash; the same family
+            that&rsquo;s been running it since 1986. That means you work
+            alongside the owners, decisions move quickly, and good work gets
+            noticed.
+          </p>
+          <p className="slead" style={{ maxWidth: "100%" }}>
+            Whether you&rsquo;re slicing a fresh hoagie at the deli counter or
+            keeping the market floor stocked for a Saturday-morning rush,
+            you&rsquo;re part of a team that cares about doing things the right
+            way. Full and part-time positions are available below.
+          </p>
+        </div>
       </section>
 
       {/* CURRENT OPENINGS */}

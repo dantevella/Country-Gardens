@@ -11,7 +11,6 @@ export function GardenFeatureList({ features }: { features: Feature[] }) {
     <div className="gfs">
       {features.map((f) => (
         <div className="gf" id={f.id} key={f.code + f.title}>
-          <div className="gfi">{f.code}</div>
           <div>
             <div className="gft">{f.title}</div>
             <div className="gfd">{f.description}</div>

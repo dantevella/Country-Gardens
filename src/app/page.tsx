@@ -65,24 +65,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* SERVICES BANNER */}
-      <section id="departments" className="home-banner">
-        {[
-          { title: "DELI", sub: "Boar's Head · Made to Order" },
-          { title: "BAKERY", sub: "Pies, cakes & donuts daily" },
-          { title: "GARDEN", sub: "Trees, shrubs & plants" },
-          { title: "CATERING", sub: "Parties & holiday dinners" },
-          { title: "LANDSCAPING", sub: "Design & installation" },
-          { title: "HARDSCAPING", sub: "Patios & stonework" },
-          { title: "COMMUNITY", sub: "Schools & nonprofits" },
-        ].map((cell) => (
-          <div key={cell.title} className="home-banner-cell">
-            <div className="home-banner-title">{cell.title}</div>
-            <div className="home-banner-sub">{cell.sub}</div>
-          </div>
-        ))}
-      </section>
-
       {/* OFFERINGS */}
       <section id="offerings" className="section section-light">
         <span className="kicker">Everything You Need</span>
@@ -99,15 +81,16 @@ export default function HomePage() {
             href="/farm-market"
             title="Farm Market"
             description="Jersey Fresh produce, local dairy, fresh breads and seasonal specialty goods."
-            image="/images/produce-peaches-corn.jpg"
-            alt="Jersey Fresh peaches and sweet corn"
+            image="/images/farm-market.jpg"
+            alt="Country Gardens Farm Market"
           />
           <OfferingCard
             href="/deli"
             title="Deli"
             description="Homemade soups and salads."
-            image={toastImages.sandwiches}
-            alt="Deli sandwiches"
+            image={toastImages.sandwich}
+            alt="Boar's Head sandwich from the Deli"
+            imageTransform="scale(1.25) translateX(7%)"
           />
           <OfferingCard
             href="/bakery"
@@ -122,27 +105,29 @@ export default function HomePage() {
             description="Holiday dinners, cold platters, hot entrées and custom party packages."
             image="/images/catering.jpg"
             alt="Catering spread from Country Gardens"
+            objectPosition="center 45%"
           />
           <OfferingCard
             href="/fundraising"
             title="Fundraising"
             description="Pies, poinsettias, wreaths and more — easy seasonal programs for schools and nonprofits."
-            image="/images/family.jpg"
-            alt="Country Gardens family"
+            image="/images/fundraising.jpg"
+            alt="Country Gardens fundraising"
           />
           <OfferingCard
             href="/landscape"
             title="Landscaping & Hardscaping"
             description="Professional design, patios, stonework, installation and lawn maintenance."
-            image="/images/landscape-walkway.jpg"
-            alt="Stamped paver walkway flanked by mulched beds and river rock"
+            image="/images/landscaping.jpg"
+            alt="Country Gardens landscaping project"
           />
           <OfferingCard
             href="/garden-center"
             title="Garden Center"
             description="Trees, shrubs, bedding plants, mulch, topsoil, firewood and propane."
-            image={toastImages.gardenCenter}
+            image="/images/garden-center.jpg"
             alt="Country Gardens Garden Center"
+            objectFit="contain"
           />
         </div>
       </section>
